@@ -1,0 +1,72 @@
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+  }
+
+  .hover-effect {
+    transition: color 0.3s, transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .hover-effect:hover {
+    color: #FFA500; /* Color change on hover */
+    transform: scale(1.1); /* Slightly enlarge the text on hover */
+  }
+  
+  .cta-container {
+    margin-top: 20px;
+  }
+  
+  .pre-cta-text {
+    font-size: 1em; /* Adjust font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .cta-text {
+    font-size: 2.5em; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cta-start {
+    color: #FFA500; /* Adjust the color to match your design */
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust font size as needed */
+  }
+  
+  .cta-button {
+    background-color: #ffffff; /* Default background color */
+    color: rgb(0, 0, 0); /* Default text color */
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for smooth color change */
+  }
+  
+  .cta-button:hover {
+    background-color: #FFA500; /* Background color on hover */
+  }
+  
+  .cta-button:active {
+    background-color: #004295; /* Background color when the button is clicked */
+    transform: scale(0.95); /* Optional: add for a press-down effect */
+  }
+
+  @keyframes levitate {
+    0% {
+      transform: translate(-50%, -50%) translateY(-5px);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(-10px);
+    }
+  }
+  

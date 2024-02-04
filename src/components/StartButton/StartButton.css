@@ -1,0 +1,22 @@
+.start-button {
+    background-color: #FFA500; /* Adjust the color to match the button color */
+    color: black;
+    border: none;
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 1em; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Add a border-radius if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
+    transition: transform 0.2s; /* Optional: add for a press-down effect */
+  }
+  
+  .start-button:hover {
+    transform: scale(1.05); /* Optional: add for a hover effect */
+  }
+  
+  .start-button:active {
+    transform: scale(0.95); /* Optional: add for a press-down effect */
+  }
+  

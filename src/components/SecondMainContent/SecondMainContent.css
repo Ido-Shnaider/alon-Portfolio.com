@@ -1,0 +1,76 @@
+.second-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+  }
+  
+  .second-cta-container {
+    margin-top: 20px;
+  }
+  
+  .second-pre-cta-text {
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .second-cta-text {
+    font-size: 2.5em; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .second-cta-start {
+    color: #FFA500; /* Adjust the color to match your design */
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust font size as needed */
+  }
+  
+  .second-cta-button {
+    background-color: #FFA500; /* Adjust the color to match your design */
+    color: black;
+    border: none;
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px; /* Add a border-radius if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
+    transition: transform 0.2s; /* Optional: add for a press-down effect */
+  }
+  
+  .second-cta-button:hover {
+    transform: scale(1.05); /* Optional: add for a hover effect */
+  }
+  
+  .second-cta-button:active {
+    transform: scale(0.95); /* Optional: add for a press-down effect */
+  }
+  
+  .animate-text {
+    animation: slideIn 2s ease forwards;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .appear-animation {
+    animation: appearAnimation 0.5s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

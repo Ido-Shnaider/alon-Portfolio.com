@@ -1,0 +1,69 @@
+.third-main-content {
+    text-align: center;
+    color: white;
+    /* Add your background styling here if necessary */
+  }
+  
+  
+  
+  .fixed-color {
+    color: #FFA500;
+    /* Additional styles if needed */
+  }
+  
+  .video-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between boxes */
+    padding: 20px 0; /* Add some padding on top and bottom */
+  }
+  
+  .video-box {
+    width: 300px; /* Adjust to your preference */
+    height: 200px; /* Adjust to your preference */
+    background-color: white;
+    border-radius: 10px; /* Optional: for rounded corners */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .play-button {
+    width: 50px; /* Adjust to your preference */
+    height: 50px; /* Adjust to your preference */
+    /* background: url('path-to-your-play-icon.png') no-repeat center center; */
+    background-size: contain;
+    cursor: pointer;
+    /* Optional: Add styles for hover effect */
+  }
+  
+  .play-button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  .video-box-caption {
+    position: absolute;
+    top: 200px; /* Adjust the top position to move the text above the video box */
+    left: 50%; /* Adjust the left position to center the text horizontally */
+    transform: translateX(-50%); /* Center the text horizontally */
+    background-color: #FFA500;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .video-box-container {
+      flex-direction: column;
+    }
+    
+    .video-box {
+      width: 80%; /* Adjust for mobile */
+      margin: 0 auto 20px; /* Add space between */
+    }
+  }
+  

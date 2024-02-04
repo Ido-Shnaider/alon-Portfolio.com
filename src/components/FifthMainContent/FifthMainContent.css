@@ -1,0 +1,63 @@
+/* FifthMainContent.css (previously footer.css) */
+
+.main-content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures each section takes up at least the full height of the viewport */
+  padding: 40px 20px; /* Adjust padding as needed */
+  background: transparent; /* Assuming a black background is common */
+  color: white;
+  text-align: center;
+}
+
+.highlight {
+  color: #FFA500; /* Keep the highlight styling consistent */
+}
+
+.contact-invite .invite-text {
+  font-size: 1em; /* Adjust to match the text size of other sections */
+  margin-bottom: 20px; /* Consistent spacing */
+}
+
+.main-content-header h2 {
+  font-size: 2.5em; /* Heading size to match other sections */
+  margin: 20px 0;
+}
+
+.contact-info {
+  font-size: 1.2em; /* Text size to match other sections */
+  margin: 20px 0;
+}
+
+.contact-item {
+  margin: 0 15px; /* Spacing to match other sections */
+}
+
+.divider {
+  color: #ffffff;
+}
+
+.signature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-size: 1em;
+  margin-top: 40px; /* Space above signature section */
+}
+
+.signature-section img {
+  width: 150px; /* Adjust to your preference */
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Responsive adjustments */
+  .main-content-header h2 {
+    font-size: 1.5em;
+  }
+  .contact-info {
+    font-size: 0.9em;
+  }
+}

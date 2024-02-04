@@ -1,0 +1,47 @@
+/* App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Your preferred font', sans-serif; /* Define your global font family */
+  background-image: url('./assets/stars.jpg'); /* Adjust the path as necessary */
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
+  background-size: cover;
+  background-position: center center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the App container is at least as tall as the viewport height */
+}
+
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 10; /* Higher than the content but lower than modal/dialog elements if any */
+}
+
+.content {
+  flex: 1; /* Takes up all available space between header and footer */
+  padding: 1rem;
+  overflow-y: auto; /* Allows scrolling of the main content */
+}
+
+.Footer {
+  position: relative;
+  width: 100%;
+}
+
+.highlight {
+  color: #FFA500; /* The color you want for the highlights */
+  font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust your styles for mobile responsiveness */
+  .Header, .Footer, .content {
+    padding: 0.5rem;
+  }
+}

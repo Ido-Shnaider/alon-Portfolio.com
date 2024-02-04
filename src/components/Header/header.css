@@ -1,0 +1,109 @@
+
+.header {
+    height: var(--header-height);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    background-color: transparent; 
+    color: white;
+    padding-top: 20px; /* Increase top padding to move links down */
+}
+  
+  
+  .logo {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Cursive font', cursive;
+    font-size: 1.5em;
+    background-color: transparent; /* Make sure the logo background is transparent */
+  }
+
+  .footer-signature {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Center-aligns children horizontally */
+    /* Add any other styles you might need, like padding or margins */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Align all navigation items to center */
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Padding to push the edges */
+    padding-top: 20px;
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    flex: 1; /* Give left and right nav equal flexibility to grow */
+    justify-content: space-around; /* Evenly spaces the children within the nav groups */
+}
+
+  .nav-item:first-child {
+    margin-left: 0; /* Adjust as necessary */
+  }
+
+  .nav-item:last-child {
+    margin-right: 0; /* Adjust as necessary */
+  }
+
+  .nav-item {
+    margin: 0; /* Remove margin to allow justify-content to manage spacing */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+  
+  .nav-item:hover {
+    color: #FFA500; /* Adjust the color to match your design */
+  }
+
+  .nav-item.cv-button {
+    background: none; /* Removes background */
+    border: none; /* Removes border */
+    padding: 0; /* Resets padding */
+    margin: 0; /* Adjust margin as needed */
+    color: white; /* Text color */
+    font-size: 1.5em; /* Matches other navigation items */
+    cursor: pointer; /* Keeps the cursor as pointer to indicate it's clickable */
+    text-decoration: none;
+}
+
+.nav-item.cv-button:hover {
+    color: #FFA500; /* Color on hover to match your design */
+}
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+    }
+  
+    .navigation {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    left-nav,
+    .right-nav {
+        justify-content: space-between; /* On mobile, distribute space between items */
+    }
+  
+    .nav-item {
+      padding: 5px;
+      font-size: 0.9em; /* Smaller font size for mobile */
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
+  
+  

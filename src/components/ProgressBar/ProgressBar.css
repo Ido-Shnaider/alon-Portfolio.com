@@ -1,0 +1,53 @@
+/* ProgressBar.css */
+.metro-progress-bar-container {
+    position: fixed; /* Adjust if needed */
+    top: 50%;
+    left: 2%; /* Adjust based on the layout */
+    transform: translateY(-50%);
+  }
+  
+  .metro-progress-bar {
+    position: relative;
+  }
+  
+  .progress-step {
+    position: relative;
+    margin-bottom: 25px; /* Adjust the space between steps */
+  }
+  
+  .progress-circle {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #0078D7; /* Metro blue color */
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .progress-title {
+    padding-left: 30px; /* Space for the circle */
+    line-height: 20px; /* Align with the circle */
+  }
+  
+  .metro-progress-bar::before {
+    content: '';
+    position: absolute;
+    left: 9px; /* Half of the circle's width to align it center */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #0078D7; /* Metro blue color */
+    z-index: 0;
+  }
+  
+  .progress-step.active .progress-circle {
+    background-color: #0078D7; /* Metro blue color */
+    border-color: #0078D7; /* Metro blue color */
+  }
+  
+  .progress-step.active .progress-title {
+    font-weight: bold; /* Highlight the active section */
+  }
+  

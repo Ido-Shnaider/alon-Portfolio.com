@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/alon-Portfolio.com/static/css/main.a93c8545.css",
+    "main.js": "/alon-Portfolio.com/static/js/main.14c7c0db.js",
+    "static/media/stars.jpg": "/alon-Portfolio.com/static/media/stars.a5b526f64e42996a5f0e.jpg",
+    "static/media/IdoCV.pdf": "/alon-Portfolio.com/static/media/IdoCV.d5fb580615e53679e526.pdf",
+    "index.html": "/alon-Portfolio.com/index.html",
+    "main.a93c8545.css.map": "/alon-Portfolio.com/static/css/main.a93c8545.css.map",
+    "main.14c7c0db.js.map": "/alon-Portfolio.com/static/js/main.14c7c0db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a93c8545.css",
+    "static/js/main.14c7c0db.js"
+  ]
+}
